@@ -8,11 +8,74 @@
 
 <ion-content>
   <div class="ion-padding">
-    
-    The world is of 1847176.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-
-    
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              The world is of 1847176.
+            </ion-card-header>
+            <ion-card-content>
+              If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card>
+            <ion-card-header>Botones</ion-card-header>
+            <ion-card-content>
+              <ion-button target="_blank" href="http://www.facebook.com">Facebook</ion-button>
+              <ion-button target="_blank" href="http://www.fcfm.uanl.mx/">FCFM</ion-button>
+              <ion-button target="_blank" href="http://www.google.com">Google</ion-button>
+            </ion-card-content>
+          </ion-card>
+          <ion-card id="card-dark-mode" color="dark">
+            <ion-card-header>En fase de pruebas</ion-card-header>
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="6">Enable Dark Mode</ion-col>
+                  <ion-col size="6"><ion-toggle disabled id="toggle-dark-mode" (ionChange)="Mode.toggleDarkMode()"></ion-toggle></ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <ion-card-header>Toggles</ion-card-header>
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="6">Primary</ion-col>
+                  <ion-col size="6"><ion-toggle color="primary"></ion-toggle></ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="6">Secondary</ion-col>
+                  <ion-col size="6"><ion-toggle checked color="secondary"></ion-toggle></ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="6">Tertiary</ion-col>
+                  <ion-col size="6"><ion-toggle color="tertiary"></ion-toggle></ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="6">Success</ion-col>
+                  <ion-col size="6"><ion-toggle checked color="success"></ion-toggle></ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="6">Danger</ion-col>
+                  <ion-col size="6"><ion-toggle color="danger"></ion-toggle></ion-col>
+                </ion-row>
+                
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
 
   </div>
 </ion-content>
