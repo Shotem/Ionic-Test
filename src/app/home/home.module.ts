@@ -21,12 +21,3 @@ import { HomePage } from './home.page';
   declarations: [HomePage]
 })
 export class HomePageModule {}
-
-class Mode {
-  public darkMode: boolean = false;
-
-  public toggleDarkMode(): void{
-    this.darkMode = !this.darkMode;
-  }
-
-}

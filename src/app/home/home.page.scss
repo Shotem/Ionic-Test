@@ -5,7 +5,12 @@
     --handle-background-checked: #fff;
 }
 
-
+ion-toggle {
+    --background: #aaaaff;
+    --background-checked: #aaffaa;
+    --handle-background: #4444ff;
+    --handle-background-checked: #44ff44;
+}
 
 ion-card-header{
     font-weight: bold;
